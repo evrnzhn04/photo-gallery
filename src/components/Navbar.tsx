@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Camera, Search, X } from 'lucide-react';
 import { FaGithub } from "react-icons/fa";
+import Link from 'next/link';
 
 interface NavbarProps {
   onSearch: (query: string) => void;
@@ -29,7 +30,7 @@ export default function Navbar({ onSearch, currentQuery = '' }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20 gap-4">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
             <div className="p-2 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 shadow-lg group-hover:shadow-xl transition-shadow">
               <Camera className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
@@ -38,7 +39,7 @@ export default function Navbar({ onSearch, currentQuery = '' }: NavbarProps) {
                 Evren's Gallery
               </h1>
             </div>
-          </a>
+          </Link>
 
           {/* Tüm ekranlarda görünen arama çubuğu */}
           <form 
