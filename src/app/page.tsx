@@ -116,7 +116,7 @@ export default function Home() {
                 <SearchIcon className="w-5 h-5 text-blue-600" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                "{searchQuery}" için sonuçlar
+                &quot;{searchQuery}&quot; için sonuçlar
               </h2>
             </div>
             <p className="text-gray-500 ml-12">
@@ -141,7 +141,7 @@ export default function Home() {
               Sonuç bulunamadı
             </h3>
             <p className="text-gray-500 text-center max-w-md">
-              "{searchQuery}" için hiçbir fotoğraf bulunamadı. Başka bir arama terimi deneyin.
+              &quot;{searchQuery}&quot; için hiçbir fotoğraf bulunamadı. Başka bir arama terimi deneyin.
             </p>
           </div>
         ) : (
