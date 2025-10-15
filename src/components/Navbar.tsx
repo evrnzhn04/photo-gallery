@@ -36,7 +36,7 @@ export default function Navbar({ onSearch, currentQuery = '' }: NavbarProps) {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-                Evren's Gallery
+                Evren&apos;s Gallery
               </h1>
             </div>
           </Link>
